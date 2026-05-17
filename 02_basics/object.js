@@ -30,6 +30,31 @@ const val2 ={
 // const val3 =Object.assign(val1,val2);
 const val3 ={...val1, ...val2
 }
-console.log(val3);
+// console.log(val3);
 
-console.log(govtData.hasOwnProperty('islogged'))
+// console.log(govtData.hasOwnProperty('islogged'))
+
+const course ={
+    name :"js",
+    price :"999",
+    duration :"10-month"
+}
+
+// const {duration}=course
+// console.log(duration);
+
+const {duration : time} = course
+console.log(time);
+
+
+
+{
+    "name" : "akash",
+    "id" : "04",
+    "islogged" : true
+}
+[
+    {}
+    {}
+    {}
+]
