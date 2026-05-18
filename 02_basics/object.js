@@ -58,3 +58,9 @@ console.log(time);
     {}
     {}
 ]
+
+const obsFile={
+    ids : "bt431",
+    address : "memory"
+}
+console.log(obsFile.ids);
