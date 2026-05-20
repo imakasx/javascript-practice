@@ -46,4 +46,31 @@ const myList={
 function myFile(myList){
     console.log(myList.id)
 }
-myFile(myList);
+// myFile(myList);
+
+function calculatePrice(v1, v2, ...n1){
+    return n1
+}
+// console.log(calculatePrice(99, 200, 100, 300));
+
+
+// const thevlaueofcar={
+//     name : "TATA",
+//     price : "10 Lac"
+// }
+function carVist(customer){
+    console.log(`${customer.name} price only ${customer.price}`)
+}
+// carVist(thevlaueofcar)
+
+// carVist({
+//     name : "TATA",
+//     price : "10 Lac"
+// })
+
+const myArray =[100,200,300]
+function myArrayis(array){
+    return array[1]
+}
+// console.log(myArrayis(myArray))
+console.log(myArrayis([350,400,200]))
