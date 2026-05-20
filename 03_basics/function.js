@@ -35,4 +35,15 @@ function loginmessage(username){
     return `${username} is logged in`
 }
 // console.log(loginmessage())
-console.log(loginmessage("akash"))
+// console.log(loginmessage("akash"))
+
+const myList={
+    id: "123",
+    name: " akash",
+    isloggedin : true,
+
+}
+function myFile(myList){
+    console.log(myList.id)
+}
+myFile(myList);
