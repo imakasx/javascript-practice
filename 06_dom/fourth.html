@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul>
+        <li class="language">Javascript</li>
+    </ul>
+</body>
+<script>
+    function addLanguage(langName){
+        const l1 = document.createElement('li');
+        l1.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(l1)
+        // appendChild(l1)
+
+    }
+    addLanguage('Python')
+    addLanguage('C++')
+    addLanguage('Java')
+
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("golang")
+
+    const secondLang = document.querySelector("li:nth-child(3)")
+    // console.log(secondLang);
+    // secondLang.innerHTML = "op"
+    const newLi = document.createElement('li')
+    newLi.textContent= "mojo"
+    secondLang.replaceWith(newLi)
+
+    const firstLang = document.querySelector('li:first-child')
+    firstLang.outerHTML = "<li>ruby</li>"
+    const firstLang1 = document.querySelector('li:last-child')
+    // firstLang1.remove()
+</script>
+</html>
