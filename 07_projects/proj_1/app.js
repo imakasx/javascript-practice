@@ -7,16 +7,16 @@ buttons.forEach(function (backgroundColor){
         console.log(e);
         console.log(e.target);
         if(e.target.id ==='red'){
-            body.style.backgroundColor = 'red';
+            body.style.backgroundColor = e.target.id;
         }
         if(e.target.id ==='gray'){
-            body.style.backgroundColor = 'gray';
+            body.style.backgroundColor = e.target.id;
         }
         if(e.target.id ==='blue'){
-            body.style.backgroundColor = 'blue';
+            body.style.backgroundColor = e.target.id;
         }
         if(e.target.id ==='yellow'){
-            body.style.backgroundColor = 'yellow';
+            body.style.backgroundColor = e.target.id;
         }
     })
 })
