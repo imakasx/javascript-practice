@@ -18,4 +18,39 @@
         </ul>
     </div>
 </body>
+<script>
+    // document.getElementById('owl').onclick=function(){
+    //     alert('owl')
+    //}
+
+    // document.getElementById('Image').addEventListener('click', function(e){
+    //     console.log("clicked image")
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log('owl');
+    //     e.stopPropagation();
+    // },false)
+
+    // document.getElementById('Google').addEventListener('click', function(e){
+    //     e.preventDefault();
+    //     e.stopPropagation();
+    //     console.log("click google")
+    // })
+    
+    document.querySelector('#Image').addEventListener('click', function(e){
+    // console.log(e.target.parentNode);
+    // let remove = e.target.parentNode;
+    console.log(e.target.tagName);
+    if(e.target.tagName === 'IMG'){
+        console.log(e.target.id);
+        let remove = e.target.parentNode; 
+        remove.remove();
+    }
+
+    // remove.remove();
+    
+})
+// remove.parentNode.removeChild(remove);
+</script>
 </html>
