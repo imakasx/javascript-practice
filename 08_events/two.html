@@ -9,4 +9,36 @@
     <h1>Javascript Practice</h1>
     <button id="stop">Stop</button>
 </body>
+<script>
+    // setTimeout(()=>{
+    //     console.log("hello rahul")
+    // },3000)
+
+    // const name = function(){
+    //     console.log("hello akash")
+    // }
+    // setTimeout(name, 2000)
+
+    // document.querySelector('h1').innerHTML="Chai or code"
+
+    // setTimeout(() => {
+    //     document.querySelector('h1').innerHTML 
+    //     ="Chai or Code";
+    // }, 3000);
+
+    const change = function(){
+        document.querySelector('h1').innerHTML="Chai or Code";
+    }
+    const clear = setTimeout(change,2000)
+
+    // clearTimeout()
+    
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(clear)
+        console.log("stopped")
+    })
+
+
+
+</script>
 </html>
