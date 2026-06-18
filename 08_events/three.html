@@ -5,8 +5,56 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
+<body style="background-color: #212121; color: #fff; ">
     <h1>Learn Javascript With Coders </h1>
+    <button id="start">Start</button>
     <button id="stop">Stop</button>
 </body>
+<script>
+    // setInterval(()=>{
+    //     console.log("hello akash",Date.now())
+    // }, 1000)
+    
+    // const sayName = function(){
+    //     console.log("hello akash", Date.now())
+    // }
+    // setInterval(sayName, 1000);
+
+    // const sayName = function(str){
+    //     console.log(str, Date.now())
+    // }
+    // // setInterval(sayName, 1000, "hii");
+    
+    // const  clearId = setInterval(sayName, 1000, "hii");
+    // clearInterval(clearId);
+
+    // const start = document.querySelector('#start').addEventListener('click', function(e){
+    // const clear = setInterval(function(){
+    //     console.log("hello akash")
+    // } , 1000);
+    
+    // const stop = document.querySelector('#stop').addEventListener('click', function(){
+        
+    //     clearInterval(clear);
+    //     console.log('stopped');
+    // })
+    // })
+
+    let clear;
+
+    const start = document.querySelector('#start').addEventListener('click', function(e){
+        
+        clear = setInterval(function(){
+        console.log("hello akash", Date.now())  
+    } , 1000);
+    })
+
+    const stop = document.querySelector('#stop').addEventListener('click', function(){
+        
+        clearInterval(clear);
+        console.log('stopped');
+    })
+
+
+</script>
 </html>
