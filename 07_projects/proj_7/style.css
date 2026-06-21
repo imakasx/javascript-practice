@@ -1,0 +1,22 @@
+body{
+    height: 100vh;
+    background-color: #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#emojis{
+    font-size: 14rem;
+    filter: grayscale(1);
+    transition-property: transfrom, filter;
+    transition-duration:300ms;
+    cursor: pointer;
+
+}
+
+#emojis:hover {
+    transform: scale(1.3);
+    filter: grayscale(0);
+}
