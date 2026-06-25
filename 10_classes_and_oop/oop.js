@@ -4,7 +4,8 @@ const user ={
     signIN : true,
 
     getUserDetails : function(){
-        console.log(this.username)
+        // console.log(this.username)
+        console.log(`hello:${this.username}`)
     }
 }
 
