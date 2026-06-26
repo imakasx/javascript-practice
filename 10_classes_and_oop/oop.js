@@ -27,12 +27,20 @@ function User(username, loginCount , isloggedIn){
 
     // return this
 }
-console.log(User("akash",5,true))
-const userOne = User("akash", 5, true);
-const usertwo = User("Rahul", 56, false);
-console.log(userOne)
+// console.log(User("akash",5,true))
+// const userOne = User("akash", 5, true);
+// const usertwo = User("Rahul", 56, false);
+// console.log(userOne)
 // this fun override so used "new" keyword than acctual rigth.
+const userOne =  new User("akash", 5, true);
+const usertwo = new User("Rahul", 56, false);
+// console.log(userOne)
+// console.log(usertwo)
 
+// console.log(user.constructor)
+
+// console.log(userOne instanceof User)
+console.log(userOne instanceof Object)
 
 
 
