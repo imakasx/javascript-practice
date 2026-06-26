@@ -9,4 +9,30 @@ const user ={
     }
 }
 
-console.log(user.getUserDetails())
+// console.log(this)
+// console.log(user.getUserDetails())
+
+// const promiseOne = new Promise()
+// const date = new Date()
+
+
+function User(username, loginCount , isloggedIn){
+    this.username = username;
+    this.loginCount = loginCount;
+    this.isloggedIn = isloggedIn;
+    this.language =function(){
+        console.log(`welcome${this.username}`);
+        
+    }
+
+    // return this
+}
+console.log(User("akash",5,true))
+const userOne = User("akash", 5, true);
+const usertwo = User("Rahul", 56, false);
+console.log(userOne)
+// this fun override so used "new" keyword than acctual rigth.
+
+
+
+
