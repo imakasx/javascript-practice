@@ -1,5 +1,3 @@
-const { useReducer } = require("react")
-
 function multiplyObj(num){
     return num*10
 }
@@ -15,14 +13,14 @@ function createUser(username, score){
 }
 
 createUser.prototype.increment = function(){
-    this.score++
+    return this.score++
 }
 createUser.prototype.printMe =function(){
-    console.log(`score is ${this.username}`)
+    console.log(`score is ${this.score}`)
 }
 
 const tea =  new createUser("tea", 25);
 const coffe = new createUser("coffe" , 125);
 
-tea.printMe();
+tea.printMe()
 
