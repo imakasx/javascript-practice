@@ -13,3 +13,20 @@ let heroPower ={
         console.log(`spider power is ${this.spider}`)
     }
 }
+
+Object.prototype.akash = function(){
+    console.log(`akash is present in all objects`)
+}
+
+Array.prototype.heyakash = function(){
+    console.log(`say hello`);
+}
+
+// heroPower.akash()
+// myHero.akash()
+// heroPower.heyakash()// not run bcz power only array
+
+myHero.heyakash()
+
+
+
