@@ -1,12 +1,11 @@
 function setUsername(username){
     this.username = username
-    console.log(this.username)
 }
 
 function createUser(email, password, username){
     this.email = email
     this.password = password
-    setUsername()
+    setUsername.call(this , username)
 }
 
 
