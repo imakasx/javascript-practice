@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical & Closure</title>
+</head>
+<body style="background-color: #313131; color: #fff;">
+    <button id="orange">orange</button>
+    <button id="green">green</button>
+</body>
+<script>
+    // function user(){
+    //     let a = "akash"
+    //     function username(){
+    //         console.log(`username is: ${a}`)
+    //     }
+    //     username()
+    // }
+    // user()
+
+    // function outer(username){
+    //     let a = username
+    //     function inner(){
+    //         let b = '04'
+    //         console.log(`(1st)user is: ${a}`)
+    //     }
+    //     function innerTwo(){
+    //         console.log(`roll no. is: ${a}`)
+    //     }
+    //     inner()
+    //     innerTwo()
+    // }
+    // outer('rahul')
+    // console.log(`too outer ${a}`)
+    // inner()
+
+    //lexical scope
+
+    // function makefun(){
+    //     const name = "rahul"
+    //     function display(){
+    //         console.log(name)
+    //     }
+    //     return display
+    // }
+    // const myfun = makefun();
+    // myfun();
+</script>
+<script>
+    // document.getElementById("orange").onclick =function(){
+    //     document.body.style.backgroundColor = 'orange'
+    // }
+    // document.getElementById("green").onclick =function(){
+    //     document.body.style.backgroundColor = 'green'
+    // }
+
+
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor = `${color}`
+        return function(){
+            document.body.style.backgroundColor = `${color}`
+        }
+    }
+    document.getElementById('orange').onclick = clickHandler("orange")
+    document.getElementById('green').onclick = clickHandler("green")
+
+</script>
+</html>
