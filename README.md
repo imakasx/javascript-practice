@@ -42,7 +42,7 @@ The goal of this repository is to strengthen my JavaScript fundamentals and serv
 
 ## 🙏 Credits
 
-This learning journey was completed by following the **JavaScript Series by Hitesh Choudhary (Chai aur Code)**.
+This learning journey was completed by following the **JavaScript Series by @hiteshchoudhary (Chai aur Code)**.
 
 A heartfelt thanks to **Hitesh Sir** for making JavaScript easy to understand through practical examples and real-world explanations. Your content has played a significant role in building my programming foundation.
 
